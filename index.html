@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    <script src="java A.js"></script>
 </head>
 <body>
     <nav>
@@ -16,19 +16,24 @@
                     <li><a href="portfolio A.html">Ahmad</a></li>
                     <li><a href="portfolio W.html">Wessam</a></li>
                 </ul>
+            </li> 
 
-                <li class="dropdown-item"><a href="#">goede doel</a>
-                    <ul>
-                        <li><a href="goede doel A.html">Ahmad</a></li>
-                        <li><a href="goede doel W.html"> Wessam</a></li>
-                    </ul>
-            
-                    <li class="dropdown-item"><a href="#">game</a>
-                        <ul>
-                            <li><a href="game A.html">Ahmad</a></li>
-                            <li><a href="game W.html">Wessam</a></li>
-                        </ul>
-            
+            <li class="dropdown-item"><a href="#">goede doel</a>
+                <ul>
+                    <li><a href="goede doel A.html">Ahmad</a></li>
+                    <li><a href="goede doel W.html"> Wessam</a></li>
+                    <li><a href="W goede A.html">waarom goede doel van Ahmad</a></li>
+                    <li><a href="Waar goede W.html">waarom goede doel van Wessam</a></li>
+                </ul>
+            </li> 
+
+            <li class="dropdown-item"><a href="#">game</a>
+                <ul>
+                    <li><a href="game A.html">Ahmad</a></li>
+                    <li><a href="game W.html">Wessam</a></li>
+                </ul>
+            </li> 
+
             <li class="dropdown-item"><a href="#">⁞⁞⁞</a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -42,18 +47,34 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <h1>Welkom bij Techniek College Rotterdam</h1>
-        <p>bij ons op school willen we dat iedereen kan leren en groeien. We werken samen en helpen elkaar.</p>
-        <p>Kijk rond op onze website om te zien wat we doen.</p>
-    </header>
+    <header class="center-h1">
+        <h1>Welkom bij Techniek College Rotterdam <br> bij ons op school willen we dat iedereen kan leren en groeien. We werken samen en helpen elkaar. <br>
+            Kijk rond op onze website om te zien wat we doen.</h1>
+        
+</header>
+
+    
     <main>
+    
+        <button onclick="openPopup('donate')">Donate to Play</button>
+
         <section>
-            <h2><a href="game uitleg.html">Donate to play</a></h2>
+            
+                <div id="popupDonate" class="popup-container">
+                    <div class="popup-content">
+                        <h2>Doneren</h2>
+                        <p>Voer het bedrag in dat je wilt doneren:</p>
+                        <input type="number" id="donationAmount" placeholder="Bedrag in euro's" required>
+                        
+                        <button onclick="closePopup('donate')"><a href="game uitleg.html">donate</a></button>
+                    </div>
+                </div>
+        
+           
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Mijn Website</p>
+         <a href="#">&copy; 2023 Game Website</a><br> <br><a href="#">Privacybeleid</a> | <a href="#">Gebruiksvoorwaarden</a>
     </footer>
 </body>
 </html>

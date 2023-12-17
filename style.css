@@ -1,11 +1,19 @@
 body{
-    
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    height: 100vh;
+    background-image: url(/foto/achtergrond.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +26,18 @@ nav li {
 nav li a {
     display: block;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    box-shadow: inset 0 0 0 0 #000000;
+    color: #ffffff;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .7s ease-in-out;
+
 }
 
 nav li a:hover {
-    background-color: #111;
-}
+    box-shadow: inset 100px 0 0 0 #257794;
+    color: white;}
 
 nav ul ul {
     position: absolute;
@@ -35,3 +49,104 @@ nav ul ul {
 nav ul li:hover > ul {
     display: block;
 }
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+   
+    padding: 20px;
+    border-radius: 17px;
+    text-align: center;
+    font-size: 29px;
+    
+}
+
+button {
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.close-button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 18%;
+    text-align: center;
+    
+}
+
+/* Stijl voor de footer */
+footer {
+    color: #fff; /* Tekstkleur in de footer */
+    padding: 20px; /* Binnenafstand van de footer-inhoud */
+    text-align: center; /* Uitlijning van de tekst in het midden */
+    position: fixed; /* De footer blijft onderaan het scherm */
+    bottom: 0; /* Plaats de footer aan de onderkant van het scherm */
+    width: 100%; /* Neem de volledige breedte van het scherm in */
+}
+
+/* Stijl voor links in de footer */
+footer a {
+    color: #fff; /* Tekstkleur van de links in de footer */
+    text-decoration: none; /* Verwijder onderstreping van de links */
+    transition: color 0.3s; /* Voeg overgang toe aan kleurverandering met een duur van 0.3 seconden */
+}
+
+/* Stijl voor links in de footer bij hover (muis erover) */
+footer a:hover {
+    color: #ffd700; /* Verander de tekstkleur naar goud bij hover */
+}
+
+
+/* CSS-stijl voor het centreren van een h1 */
+.center-h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%; /* 100% van de viewporthoogte */
+        font-size: 70%;
+}
+
+h1{
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%; /* 100% van de viewporthoogte */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+    main {
+        display: block;
+    }
+
+    section p {
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #ffffff;
+        padding: 1em;
+        border: 4px solid #257794;
+        width: auto;
+        height: auto;
+        border-radius: 23px;
+        margin: 20%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }

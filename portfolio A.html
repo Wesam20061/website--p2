@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+    <script src="java A.js"></script>
 </head>
 <body>
     
@@ -18,19 +18,24 @@
                     <li><a href="portfolio A.html">Ahmad</a></li>
                     <li><a href="portfolio W.html">Wessam</a></li>
                 </ul>
+            </li> 
 
-                <li class="dropdown-item"><a href="#">goede doel</a>
-                    <ul>
-                        <li><a href="goede doel A.html">Ahmad</a></li>
-                        <li><a href="goede doel W.html"> Wessam</a></li>
-                    </ul>
-            
-                    <li class="dropdown-item"><a href="#">game</a>
-                        <ul>
-                            <li><a href="game A.html">Ahmad</a></li>
-                            <li><a href="game W.html">Wessam</a></li>
-                        </ul>
-            
+            <li class="dropdown-item"><a href="#">goede doel</a>
+                <ul>
+                    <li><a href="goede doel A.html">Ahmad</a></li>
+                    <li><a href="goede doel W.html"> Wessam</a></li>
+                    <li><a href="W goede A.html">waarom goede doel van Ahmad</a></li>
+                    <li><a href="Waar goede W.html">waarom goede doel van Wessam</a></li>
+                </ul>
+            </li> 
+
+            <li class="dropdown-item"><a href="#">game</a>
+                <ul>
+                    <li><a href="game A.html">Ahmad</a></li>
+                    <li><a href="game W.html">Wessam</a></li>
+                </ul>
+            </li> <!-- Added closing tag for the third <li> element -->
+
             <li class="dropdown-item"><a href="#">⁞⁞⁞</a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -48,18 +53,81 @@
     <h1>Portfolio</h1>
   </header>
 <main>
-<section>
-<h2>Ahmad</h2>
-<p>
-    Ik ben Ahmad, 17 jaar oud en kom uit Syrië. Op dit moment studeer ik software developer aan het Techniek College Rotterdam. Naast mijn studie werk ik als bezorger bij een restaurant op Zuidplein. In mijn vrije tijd vind ik het heerlijk om met vrienden in het Zuiderpark te sporten. Mijn favoriete activiteiten zijn tennis, voetbal en pingpong. Daarnaast ben ik een groot fan van het videospel FIFA 23. <br>
-    Een van mijn dromen is om ooit een prachtige auto te bezitten, specifiek een Ford Mustang. Ik heb namelijk een grote passie voor auto's.
-</p>
-</section>
-<main>
-    <footer>
-        <p>&copy; 2023 Mijn Website</p>
-    </footer>
+    <button onclick="openPopup('naam')">Naam</button>
+    <button onclick="openPopup('profiel')">Profiel</button>
+    <button onclick="openPopup('opleiding')">Opleiding</button>
+    <button onclick="openPopup('talen')">Talen</button>
+    <button onclick="openPopup('werkervaring')">Werkervaring</button>
+    <button onclick="openPopup('hobbies')">Hobby's</button>
 
+<section>
+    <p>
+    <div id="popupNaam" class="popup-container">
+        <div class="popup-content">
+            <h2>Naam</h2>
+            <p>Ahmad Alismail</p>
+            <button class="close-button" onclick="closePopup('naam')">Sluiten</button>
+        </div>
+    </div>
+
+    <div id="popupProfiel" class="popup-container">
+        <div class="popup-content">
+            <h2>Profiel</h2>
+            <p>Ik ben Ahmad, 17 jaar oud en kom uit Syrië. Op dit moment studeer ik software developer aan het Techniek College Rotterdam. Naast mijn studie werk ik als bezorger bij een restaurant op Zuidplein. In mijn vrije tijd vind ik het heerlijk om met vrienden in het Zuiderpark te sporten. Mijn favoriete activiteiten zijn tennis, voetbal en pingpong. Daarnaast ben ik een groot fan van het videospel FIFA 23. <br>
+                Een van mijn dromen is om ooit een prachtige auto te bezitten, specifiek een Ford Mustang. Ik heb namelijk een grote passie voor auto's.
+            .</p>
+            <button class="close-button" onclick="closePopup('profiel')">Sluiten</button>
+        </div>
+    </div>
+
+    <div id="popupOpleiding" class="popup-container">
+        <div class="popup-content">
+            <h2>Opleiding</h2>
+            <p>software developer, Techniek College Rotterdam</p>
+            <button class="close-button" onclick="closePopup('opleiding')">Sluiten</button>
+        </div>
+    </div>
+
+    <div id="popupTalen" class="popup-container">
+        <div class="popup-content">
+            <h2>Talen</h2>
+            <p>Arabisch, Nederlands, Engels, Turks</p>
+            <button class="close-button" onclick="closePopup('talen')">Sluiten</button>
+        </div>
+    </div>
+
+    <div id="popupWerkervaring" class="popup-container">
+        <div class="popup-content">
+            <h2>Werkervaring</h2>
+            <ul>
+                <li>Albert Heijn, Silvia (2022 - 2023)</li>
+                <li>TOS, Jhonatan (2021 - 2022)</li>
+                <li>McDonald's, Ben (2021 - 2021)</li>
+                <li>Ik heb daar 6 maanden gewerkt</li>
+            </ul>
+            <button class="close-button" onclick="closePopup('werkervaring')">Sluiten</button>
+        </div>
+    </div>
+
+   
+
+    <div id="popupHobbies" class="popup-container">
+        <div class="popup-content">
+            <h2>Hobby's</h2>
+            <p>Calisthenics, Tennis, tafeltenis, Voetbal</p>
+            <button class="close-button" onclick="closePopup('hobbies')">Sluiten</button>
+        </div>
+    </div>
+
+    </p>
+    </section>
+    
+
+<main>
+    
+    <footer>
+        <p> <a href="#">&copy; 2023 Game Website</a><br> <br><a href="#">Privacybeleid</a> | <a href="#">Gebruiksvoorwaarden</a></p>
+    </footer>
 
 </body>
 </html>
