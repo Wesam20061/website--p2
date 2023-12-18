@@ -53,80 +53,35 @@
     <h1>Portfolio</h1>
   </header>
 <main>
-    <button onclick="openPopup('naam')">Naam</button>
-    <button onclick="openPopup('profiel')">Profiel</button>
-    <button onclick="openPopup('opleiding')">Opleiding</button>
-    <button onclick="openPopup('talen')">Talen</button>
-    <button onclick="openPopup('werkervaring')">Werkervaring</button>
-    <button onclick="openPopup('hobbies')">Hobby's</button>
+   <section>
+    <h2></h2>
+        <button onclick="toonVerberg('tekst1')">Naam</button>
+    <p id="tekst1" style="display: none;">Ahmad Alismail</p>
 
-<section>
-    <p>
-    <div id="popupNaam" class="popup-container">
-        <div class="popup-content">
-            <h2>Naam</h2>
-            <p>Ahmad Alismail</p>
-            <button class="close-button" onclick="closePopup('naam')">Sluiten</button>
-        </div>
-    </div>
+    <button onclick="toonVerberg('tekst2')">Profiel</button>
+    <p id="tekst2" style="display: none;">Ik ben Ahmad, 17 jaar oud en kom uit Syrië. Op dit moment studeer ik software developer aan het Techniek College Rotterdam. Naast mijn studie werk ik als bezorger bij een restaurant op Zuidplein. In mijn vrije tijd vind ik het heerlijk om met vrienden in het Zuiderpark te sporten. Mijn favoriete activiteiten zijn tennis, voetbal en pingpong. Daarnaast ben ik een groot fan van het videospel FIFA 23. <br>
+        Een van mijn dromen is om ooit een prachtige auto te bezitten, specifiek een Ford Mustang. Ik heb namelijk een grote passie voor auto's.</p>
 
-    <div id="popupProfiel" class="popup-container">
-        <div class="popup-content">
-            <h2>Profiel</h2>
-            <p>Ik ben Ahmad, 17 jaar oud en kom uit Syrië. Op dit moment studeer ik software developer aan het Techniek College Rotterdam. Naast mijn studie werk ik als bezorger bij een restaurant op Zuidplein. In mijn vrije tijd vind ik het heerlijk om met vrienden in het Zuiderpark te sporten. Mijn favoriete activiteiten zijn tennis, voetbal en pingpong. Daarnaast ben ik een groot fan van het videospel FIFA 23. <br>
-                Een van mijn dromen is om ooit een prachtige auto te bezitten, specifiek een Ford Mustang. Ik heb namelijk een grote passie voor auto's.
-            .</p>
-            <button class="close-button" onclick="closePopup('profiel')">Sluiten</button>
-        </div>
-    </div>
+    <button onclick="toonVerberg('tekst3')">Opleiding</button>
+    <p id="tekst3" style="display: none;">software developer, Techniek College Rotterdam</p>
 
-    <div id="popupOpleiding" class="popup-container">
-        <div class="popup-content">
-            <h2>Opleiding</h2>
-            <p>software developer, Techniek College Rotterdam</p>
-            <button class="close-button" onclick="closePopup('opleiding')">Sluiten</button>
-        </div>
-    </div>
+    <button onclick="toonVerberg('tekst4')">Talen</button>
+    <p id="tekst4" style="display: none;">Arabisch <br> Nederlands <br> Engels <br> Turks</p>
 
-    <div id="popupTalen" class="popup-container">
-        <div class="popup-content">
-            <h2>Talen</h2>
-            <p>Arabisch, Nederlands, Engels, Turks</p>
-            <button class="close-button" onclick="closePopup('talen')">Sluiten</button>
-        </div>
-    </div>
-
-    <div id="popupWerkervaring" class="popup-container">
-        <div class="popup-content">
-            <h2>Werkervaring</h2>
-            <ul>
-                <li>Albert Heijn, Silvia (2022 - 2023)</li>
-                <li>TOS, Jhonatan (2021 - 2022)</li>
-                <li>McDonald's, Ben (2021 - 2021)</li>
-                <li>Ik heb daar 6 maanden gewerkt</li>
-            </ul>
-            <button class="close-button" onclick="closePopup('werkervaring')">Sluiten</button>
-        </div>
-    </div>
-
-   
-
-    <div id="popupHobbies" class="popup-container">
-        <div class="popup-content">
-            <h2>Hobby's</h2>
-            <p>Calisthenics, Tennis, tafeltenis, Voetbal</p>
-            <button class="close-button" onclick="closePopup('hobbies')">Sluiten</button>
-        </div>
-    </div>
-
+    <button onclick="toonVerberg('tekst5')">Werkervaring</button>
+    <p id="tekst5" style="display: none;">Albert Heijn, Silvia (2022 - 2023) <br>
+        TOS, Jhonatan (2021 - 2022) <br> McDonald's, Ben (2021 - 2021) <br> Ik heb daar 6 maanden gewerkt
     </p>
-    </section>
+
+    <button onclick="toonVerberg('tekst6')">Hobby's</button>
+    <p id="tekst6" style="display: none;">Calisthenics <br> Tennis <br>tafeltenis <br> Voetbal</p>
+   </section>
     
 
 <main>
     
     <footer>
-        <p> <a href="#">&copy; 2023 Game Website</a><br> <br><a href="#">Privacybeleid</a> | <a href="#">Gebruiksvoorwaarden</a></p>
+         <a href="#">&copy; 2023 Game Website</a><br> <br><a href="#">Privacybeleid</a> | <a href="#">Gebruiksvoorwaarden</a>
     </footer>
 
 </body>
