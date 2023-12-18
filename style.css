@@ -121,6 +121,8 @@ footer a:hover {
         justify-content: center;
         height: 70%; /* 100% van de viewporthoogte */
         font-size: 70%;
+        margin-left: 17%;
+        margin-right: 17%;
 }
 
 h1{
