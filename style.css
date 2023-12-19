@@ -91,29 +91,33 @@ button {
     
 }
 
-/* Stijl voor de footer */
 footer {
-    position: fixed;
-    color: #fff; /* Tekstkleur in de footer */
-    padding: 1px; /* Binnenafstand van de footer-inhoud */
-    text-align: center; /* Uitlijning van de tekst in het midden */
-    bottom: 0; /* Plaats de footer aan de onderkant van het scherm */
-    width: 100%; /* Neem de volledige breedte van het scherm in */
+    background-color: #113969;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Stijl voor links in de footer */
+footer h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
 footer a {
-    color: #0a1640; /* Tekstkleur van de links in de footer */
-    text-decoration: none; /* Verwijder onderstreping van de links */
-    transition: color 0.3s; /* Voeg overgang toe aan kleurverandering met een duur van 0.3 seconden */
+    color: #777;
+    text-decoration: none;
 }
 
-/* Stijl voor links in de footer bij hover (muis erover) */
 footer a:hover {
-    color: #ffd700; /* Verander de tekstkleur naar goud bij hover */
-}
+    color: #333;}
 
-
+    
 /* CSS-stijl voor het centreren van een h1 */
 .center-h1 {
         display: flex;
