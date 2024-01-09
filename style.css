@@ -3,7 +3,7 @@ body{
     background-color: #f8f9fa;
     margin: 0;
     height: 100vh;
-    background-image: url(/foto/Afbeelding.jpg);
+    background-image: url(./foto/Afbeelding.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,6 +48,18 @@ nav ul ul {
 
 nav ul li:hover > ul {
     display: block;
+}
+.dropdown-item{
+    display: none;
+}
+@media (max-width: 500px) {
+    .dropdown-item{
+        display: flex
+    }
+    .navi{
+        display: none;
+    
+    }
 }
 
 
@@ -95,6 +107,7 @@ footer {
     background-color: #113969;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 footer h3 {
