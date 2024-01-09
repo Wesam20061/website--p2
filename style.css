@@ -10,6 +10,7 @@ body{
     background-attachment: fixed;
     text-align: center;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -52,15 +53,9 @@ nav ul li:hover > ul {
 .dropdown-item{
     display: none;
 }
-@media (max-width: 500px) {
-    .dropdown-item{
-        display: flex
-    }
-    .navi{
-        display: none;
-    
-    }
-}
+
+
+   
 
 
 .popup-container {
@@ -204,4 +199,22 @@ h2{
     a {
         text-decoration: none;
         color: #ffffff;
+    }
+
+
+
+
+    @media (max-width: 550px) {
+        .dropdown-item{
+            display: flex
+        }
+        .navi{
+            display: none;
+        
+        }
+        h1{
+            font-size: 25px;
+        }
+    
+    
     }
