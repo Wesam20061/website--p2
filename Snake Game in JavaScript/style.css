@@ -22,7 +22,7 @@ body {
   justify-content: center;
   border-radius: 5px;
   background: #293447;
-  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  box-shadow: 0 90px 900px #34dc6133;
 }
 .game-details {
   color: #B8C6DC;
@@ -43,7 +43,7 @@ body {
   background: #FF003D;
 }
 .play-board .head {
-  background: #60CBFF;
+  background: #34dc6133;
 }
 
 .controls {
@@ -62,8 +62,8 @@ body {
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    width: 90vmin;
-    height: 115vmin;
+    width: 70vmin;
+    height: 80vmin;
   }
   .game-details {
     font-size: 1rem;
