@@ -20,7 +20,7 @@ body {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 8px;
   background: #293447;
   box-shadow: 0 90px 900px #34dc6133;
 }
