@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #E3F2FD;
+  background-image: linear-gradient(to bottom, chartreuse, black 70%);
 }
 .wrapper {
   width: 65vmin;
@@ -22,7 +22,7 @@ body {
   justify-content: center;
   border-radius: 8px;
   background: #293447;
-  box-shadow: 0 90px 900px #34dc6133;
+  
 }
 .game-details {
   color: #B8C6DC;
@@ -36,28 +36,14 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  background: #212837;
+  background-image: linear-gradient(to bottom, black , chartreuse);
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 .play-board .food {
   background: #FF003D;
 }
 .play-board .head {
-  background: #34dc6133;
-}
-
-.controls {
-  display: none;
-  justify-content: space-between;
-}
-.controls i {
-  padding: 25px 0;
-  text-align: center;
-  font-size: 1.3rem;
-  color: #B8C6DC;
-  width: calc(100% / 4);
-  cursor: pointer;
-  border-right: 1px solid #171B26;
+  background: #00ffa6;
 }
 
 @media screen and (max-width: 800px) {
