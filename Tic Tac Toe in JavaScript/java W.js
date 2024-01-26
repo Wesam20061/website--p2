@@ -1,3 +1,7 @@
+
+
+//Hier stellen we de regels in voor het spel. Speler "O" en speler "X" wisselen elkaar af, en we beginnen met speler "X".
+
 let playerText = document.getElementById('playerText')
 let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
@@ -7,12 +11,19 @@ let winnerIndicator = getComputedStyle(document.body).getPropertyValue('--winnin
 const O_TEXT = "O"
 const X_TEXT = "X"
 let currentPlayer = X_TEXT
+
+
+//Dit is als het speelbord waarin we kunnen zien welke vakjes bezet zijn en door wie.
 let spaces = Array(9).fill(null)
 
+
+
+//Hier starten we het spel door te zorgen dat elke keer dat je op een vakje klikt, er iets gebeurt.
 const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
 }
 
+//Hier wordt een zet gedaan wanneer je op een vakje klikt. Als iemand heeft gewonnen, wordt dat weergegeven. Anders wisselen we van speler.
 function boxClicked(e) {
     const id = e.target.id
 
@@ -31,7 +42,7 @@ function boxClicked(e) {
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
     }
 }
-
+//Dit zijn de combinaties waarmee je het spel kunt winnen.
 const winningCombos = [
     [0,1,2],
     [3,4,5],
@@ -43,6 +54,7 @@ const winningCombos = [
     [2,4,6]
 ]
 
+//Deze functie controleert of iemand heeft gewonnen op basis van de winnende combinaties.
 function playerHasWon() {
     for (const condition of winningCombos) {
         let [a, b, c] = condition
@@ -54,6 +66,7 @@ function playerHasWon() {
     return false
 }
 
+//Wanneer je op de herstartknop klikt, begint het spel opnieuw.
 restartBtn.addEventListener('click', restart)
 
 function restart() {
@@ -68,5 +81,5 @@ function restart() {
 
     currentPlayer = X_TEXT
 }
-
+// Hier starten we deze spel
 startGame()
